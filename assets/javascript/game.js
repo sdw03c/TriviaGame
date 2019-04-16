@@ -11,61 +11,61 @@ $(document).ready(function () {
             question: "In season 2, who does Tyrion tell Varys he is planning on marrying to Princess Myrcella?", 
             choice: ["Trystane Martell of Dorne", "Robyn Arryn", "Bran Stark", "Theon Greyjoy"],
             answer: 3,
-            photo: "assets/images/.jpg"
+            photo: "assets/images/theonGreyjoy.gif"
          },
          {
              question: "Which House is a direct vassal of House Baratheon of King's Landing?", 
             choice: ["Stokeworth", "Greyjoy", "Upcliff", "Karstark"],
             answer: 0,
-            photo: "assets/images/.gif"
+            photo: "assets/images/Stokeworth.png"
          }, 
          {
             question: "What is the name of Jon's direwolf?", 
             choice: ["Summer", "Shaggyddog", "Ghost", "Grey Wind" ],
             answer: 2,
-            photo: "assets/images/.gif"
+            photo: "assets/images/ghost.gif"
         }, 
         {
             question: "Why could Jon leave the Night's Watch, since his vows were for life?", 
             choice: ["As Lord Commander, he was free to go", "He died", "He is the son of the great lord", "He broke his vows" ],
             answer: 1,
-            photo: "assets/images/.jpg"
+            photo: "assets/images/deadJonSnow.gif"
         }, 
         {
             question: "How many men did Theon Greyjoy use to capture Winterfell?", 
             choice: ["10", "40", "100", "20" ],
             answer: 3,
-            photo: "assets/images/.jpg"
+            photo: "assets/images/theonWinterfell.gif"
         }, 
         {
             question: "Which name is given to the bastards of The Reach?", 
             choice: ["Storm", "Pyke", "Flowers", "Waters" ],
             answer: 2,
-            photo: "assets/images/.jpg"
+            photo: "assets/images/flowers.jpg"
         }, 
         {
             question: "How many times has Sansa Stark been married?", 
             choice: ["Once", "Twice", "Three times", "She has never been married" ],
             answer: 1,
-            photo: "assets/images/.gif"
+            photo: "assets/images/SansaandJoffrey.gif"
         }, 
         {
             question: "Who was the Mad King's firstborn son?", 
             choice: ["Rhaegar Targaryen", "Viserys Targaryen", "Aegon Targaryen", "Aemon Targaryen" ],
             answer: 0,
-            photo: "assets/images/.gif"
+            photo: "assets/images/rhaegar.gif"
         },
         {
             question: "Grey Worm and Missandei became allies of Daenerys Targaryen after she liberated the slaves of which city?", 
             choice: ["Qarth", "Yunkai", "Meereen", "Astapor" ],
             answer: 3,
-            photo: "assets/images/.gif"
+            photo: "assets/images/GreyWormandMissandei.gif"
         },
         {
             question: "Which city does Samwell Tarly travel to in order to train as a maester?", 
             choice: ["Highgarden", "Oldtown", "Sunspear", "Newtown" ],
             answer: 1,
-            photo: "assets/images/.gif"
+            photo: "assets/images/oldtown.jpg"
         }];   
         var totalQuestions = questions.length;
         var select;
@@ -99,7 +99,7 @@ $(document).ready(function () {
         if (timer === 0) {
             unansweredQuestions++;
             stop();
-            $("#correctAnswer").html("<p>Time is up! The correct answer is: " + select.choice[select.answer] + "</p>");
+            $("#correctAnswer").html("<h4>Time is up! The correct answer is: " + select.choice[select.answer] + "</h4>");
             hidepicture();
         }	
     }
@@ -137,7 +137,7 @@ $(document).ready(function () {
             stop();
             wrongAnswers++;
             userGuess="";
-            $("#correctAnswer").html("<h4>Wrong! The correct answer is: " + select.choice[select.answer] + "</h4>").css('color','red');
+            $("#correctAnswer").html("<h4>Nope! The correct answer is: " + select.choice[select.answer] + "</h4>").css('color','red');
             hidepicture();
         }
     })
@@ -170,7 +170,7 @@ $(document).ready(function () {
             displayQuestion();
     
         }
-        }, 1500);
+        }, 5000);
     
     
     }
