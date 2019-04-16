@@ -1,22 +1,33 @@
 #background-image{
-    background: url("../images/crystalBackground.png"); 
+    background: url("../images/triviaBackground.PNG"); 
     width: 100% !important;
     height: 100% !important;
-    background-repeat: no-repeat
+ 
 }
 
 #main-container {
-    padding-top: 50px;
+    padding: 50px;
     min-height: calc(100vh - 70px);
   }
 
   .container {
-    width: 100%;
-    max-width: 960px;
-    margin: 0 auto;
-    clear: both;
+    height: 600px;
+    width: 50%;
+    margin: 10px auto;
+    background-color: white;
+    border-radius: 25px;
+    text-align: center;
   }
-
+  .btn {
+    position: relative;
+    bottom: -50px;
+  }
+  h5:hover{
+      background-color: rgba(255, 0, 0, 0.5);
+      border: 1px solid red;
+      padding: 5px;
+      color: white
+  }
 #header{
       color: #FFFFF0;
       padding: 30px 0px
@@ -56,104 +67,4 @@ img{cursor: pointer;
     padding: 3px
 }
 
- @media screen and (max-width: 980px){
-    #background-image{
-        background: url("../images/crystalBackground.png"); 
-        width: 100% !important;
-        height: 100% !important;
-        background-repeat: no-repeat
-    }
-    
-    #main-container {
-        padding-top: 50px;
-        min-height: calc(100vh - 70px);
-      }
-    
-      .container {
-        width: 100%;
-        max-width: 960px;
-        margin: 0 auto;
-        clear: both;
-      }
-    
-    #header{
-          color: #FFFFF0;
-          padding: 30px 0px
-      }
-    
-     #instructions{
-         background: white;
-         font-size: 18px;
-         font-family: cursive;
-    
-     } 
-
- }
-
- @media screen and (max-width: 768px){
-    #background-image{
-        background: url("../images/crystalBackground.png"); 
-        width: 100% !important;
-        height: 100% !important;
-        background-repeat: no-repeat
-    }
-    
-    #main-container {
-        padding-top: 50px;
-        min-height: calc(100vh - 70px);
-      }
-    
-      .container {
-        width: 100%;
-        max-width: 960px;
-        margin: 0 auto;
-        clear: both;
-      }
-    
-    #header{
-          color: #FFFFF0;
-          padding: 30px 0px
-      }
-    
-     #instructions{
-         background: white;
-         font-size: 18px;
-         font-family: cursive;
-    
-     } 
-
- }
-
- @media screen and (max-width: 640px){
-    #background-image{
-        background: url("../images/crystalBackground.png"); 
-        width: 100% !important;
-        height: 100% !important;
-        background-repeat: no-repeat
-    }
-    
-    #main-container {
-        padding-top: 50px;
-        min-height: calc(100vh - 70px);
-      }
-    
-      .container {
-        width: 100%;
-        max-width: 960px;
-        margin: 0 auto;
-        clear: both;
-      }
-    
-    #header{
-          color: #FFFFF0;
-          padding: 30px 0px
-      }
-    
-     #instructions{
-         background: white;
-         font-size: 18px;
-         font-family: cursive;
-    
-     } 
-
- }
+ 
